@@ -23,4 +23,20 @@ public class CurrentAccount {
     public void setClient(Client client) {
         this.client = client;
     }
+
+    public void deposit(Double amount) {
+        this.balance += amount;
+    }
+
+    public void withdraw(Double amount) {
+       try {
+        if (this.balance < amount) {
+            throw new Exception("Insufficient funds");
+        }
+        
+        this.balance -= amount;
+       } catch (Exception e) {
+        // TODO: handle exception
+       }
+    }
 }
