@@ -1,20 +1,19 @@
 package model;
 
-public class Auth {
+public class CurrentAccount {
     private String account;
-    private String password;
+    private Client client;
 
-    
     public String getAccount() {
         return account;
     }
     public void setAccount(String account) {
         this.account = account;
     }
-    public String getPassword() {
-        return password;
+    public Client getClient() {
+        return client;
     }
-    public void setPassword(String password) {
-        this.password = password;
+    public void setClient(Client client) {
+        this.client = client;
     }
 }
