@@ -1,6 +1,8 @@
 package model;
 
-public class Auth {
+import java.io.Serializable;
+
+public class Auth implements Serializable{
     private String account;
     private String password;
 

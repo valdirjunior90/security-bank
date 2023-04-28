@@ -1,8 +1,9 @@
 package model;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Client {
-
+public class Client implements Serializable{
+    private Integer id;
     private String name;
     private String cpf;
     private String address;
@@ -55,6 +56,14 @@ public class Client {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
 }

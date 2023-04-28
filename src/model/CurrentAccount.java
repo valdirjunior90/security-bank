@@ -1,6 +1,8 @@
 package model;
 
-public class CurrentAccount {
+import java.io.Serializable;
+
+public class CurrentAccount implements Serializable{
     private String account;
     private Client client;
     private Double balance;
